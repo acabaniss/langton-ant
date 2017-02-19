@@ -8,4 +8,6 @@ Running the model with a grid size of 60 and with wrapping turned on, it becomes
 
 At 17000 time steps, a new ''highway'' is formed going to the upper right of the screen. Rather than being a unique confluence of factors, it appears that this emergent behavior can be achieved under multiple different starting conditions. ![A new highway is formed](figure_3.png)
 
-A final point - the world size matters for values smaller than 77. This is the size at which the ''highway'' does not collide with the central noise. Beyond this point, the physical state of the center of the world will remain the same until the point at which the entire map fills up. Below this point, each subtle change in the world size results in a differen collision trajectory, which leads to new states. ![A highway barely misses the noise](figure_4.png)
+A final point - the world size matters for values smaller than 77. This is the size at which the ''highway'' does not collide with the central noise. Beyond this point, the physical state of the center of the world will remain the same until the point at which the entire map fills up. Below this point, each subtle change in the world size results in a different collision trajectory, which leads to new states. ![A highway barely misses the noise](figure_4.png)
+
+This is overall a good system for demonstrating the simple point that boundaries matter. When boundaries are fixed, this steady state ends the computation; when they wrap, future states are sensitive to the size of the world.
